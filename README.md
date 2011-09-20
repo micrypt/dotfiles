@@ -1,1 +1,1 @@
-Oo... Vim config base ..oO
+Oo... vim config base ..oO
