@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/micrypt/Workspace/scala/lift-omniauth/src/main/scala/omniauth/lib'
+let g:netrw_dirhist_2='/home/micrypt/Workspace/scala/lift/kit/lift_23_sbt/lift_basic/src/main/scala/code'
+let g:netrw_dirhist_3='/home/micrypt/blog/app/views'
+let g:netrw_dirhist_4='/home/micrypt/Workspace/python/whosgoing/whosgoing/requirements'
+let g:netrw_dirhist_5='/home/micrypt/bin/clojure'
+let g:netrw_dirhist_6='/home/micrypt/Workspace/python/planfuel/settings'
