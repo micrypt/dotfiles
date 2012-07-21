@@ -1,1 +1,1 @@
-Oo... vim config base ..oO
+Oo... dotfiles ..oO
