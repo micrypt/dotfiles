@@ -1,4 +1,4 @@
-; Public Domain (-) 2012 tav <me@micrypt.com>
+; Public Domain (-) 2012 micrypt <me@micrypt.com>
 ; Primarily based on https://github.com/tav/emacs-tav
 
 (require 'cl)
