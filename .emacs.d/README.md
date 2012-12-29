@@ -1,7 +1,7 @@
 Seyi's Emacs Setup
 -----------------
 
-This is based on https://github.com//emacs-tav with some tweaks such as including the marmalade package manager.
+This is based on https://github.com/tav/emacs-tav with some tweaks such as including the marmalade package manager.
 
 **License**
 
