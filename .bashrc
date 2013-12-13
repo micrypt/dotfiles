@@ -14,13 +14,25 @@ if [ -d ~/.local/bin ] ; then
     PATH=~/.local/bin:"${PATH}"
 fi
 
+platform = 'unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    platform='linux'
+elif [[ "$unamestr" == "FreeBSD" ]]; then
+    platform='freebsd'
+elif [[ "$unamestr" == "Darwin" ]]; then
+    platform='darwin'
+fi 
+
 # enable bash completion if available
 if [ -f ~/.local/etc/bash_completion ]; then
     . ~/.local/etc/bash_completion
 fi
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+if ! type "brew" > /dev/null; then
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
 fi
 
 # only search directories on cd tab completion
@@ -37,7 +49,6 @@ export LESS=' -R '
 
 alias ampenv="source ~/silo/ampify/environ/ampenv.sh && unset GOROOT"
 alias chx='chmod +x'
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias ffind="find * -type f"
 alias github='git push origin master'
 alias gitupstream='git push upstream master'
@@ -63,6 +74,10 @@ alias svnchange='svn status | grep -v "^[?XP]" | grep -v "^$"'
 alias svnstatus='svn status"'
 alias untar='tar xzvf'
 alias vi='vim'
+
+if [[ $platform == 'darwin' ]]; then
+    alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+fi
 
 source ~/.local/shell/git-completion.bash
 source ~/.local/shell/git-prompt.sh
