@@ -14,7 +14,7 @@ if [ -d ~/.local/bin ] ; then
     PATH=~/.local/bin:"${PATH}"
 fi
 
-platform = 'unknown'
+platform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
     platform='linux'
