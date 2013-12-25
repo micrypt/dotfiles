@@ -46,7 +46,6 @@ export LESSOPEN='|/usr/local/Cellar/source-highlight/3.1.5/bin/src-hilite-lesspi
 export LESS=' -R '
 
 # aliases
-
 alias ampenv="source ~/silo/ampify/environ/ampenv.sh && unset GOROOT"
 alias chx='chmod +x'
 alias ffind="find * -type f"
@@ -79,9 +78,9 @@ if [[ $platform == 'darwin' ]]; then
     alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 fi
 
+# Git utilities
 source ~/.local/shell/git-completion.bash
 source ~/.local/shell/git-prompt.sh
-
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # Reset
