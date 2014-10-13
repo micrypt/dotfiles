@@ -2,3 +2,4 @@
 .emacs.d/backups/*
 .emacs.d/ac-comphist.dat
 .emacs.d/places
+.emacs.d/elpa

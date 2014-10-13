@@ -7,4 +7,4 @@
 (setq font-lock-maximum-decoration t)
 (setq-default ispell-program-name "/usr/local/bin/aspell")
 
-(color-theme-molokai)
+(color-theme-solarized-light)
