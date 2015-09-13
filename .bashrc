@@ -45,7 +45,11 @@ set completion-ignore-case On
 export LESSOPEN='|/usr/local/Cellar/source-highlight/3.1.5/bin/src-hilite-lesspipe.sh %s'
 export LESS=' -R '
 
-# aliases
+# aliases: confirm destructive operations
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -iv'
+# more aliases
 alias ampenv="source ~/silo/ampify/environ/ampenv.sh && unset GOROOT"
 alias chx='chmod +x'
 alias ffind="find * -type f"
